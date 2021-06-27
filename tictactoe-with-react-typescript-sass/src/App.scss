@@ -1,0 +1,126 @@
+.flexContainer, .flexFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.flexContainer {
+  align-items: center;
+}
+.flexFormContainer label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #330a00;
+}
+.flexFormContainer input {
+  margin-bottom: 5px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #330a00;
+  width: 250px;
+  padding: 8px;
+  font-size: 16px;
+  color: #330a00;
+}
+.flexFormContainer button {
+  border-radius: 5px;
+  border: 1px solid #330a00;
+  background-color: #801a00;
+  color: #ffebe6;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 7px;
+  cursor: pointer;
+}
+.screenCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #ffffff;
+}
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.menuContainer button {
+  border-radius: 5px;
+  border: 1px solid #330a00;
+  background-color: #801a00;
+  color: #ffebe6;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 7px;
+  cursor: pointer;
+}
+.menuContainer button:disabled {
+  background-color: #808080;
+  cursor: default;
+}
+.grandParentGridContainer {
+  display: grid;
+  grid-template-rows: auto 300px auto;    
+  background-color: #ffc2b3;
+  border: 2px solid #801a00;
+  padding: 20px;
+  box-shadow: 15px 15px 15px #801a00;
+}
+.parentGridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.parentGridCell {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.parentGridCell h2 {
+  margin: 0px;
+  color: #330a00;
+  text-decoration: underline;
+}
+.parentGridCell h3 {
+  margin: 0px;
+  color: #b32400;
+  font-size: 20px;
+}
+.gridCell {
+  border: 1px solid black;
+}
+.gridCellValue {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  position: relative;
+}
+.gridCellValue span {
+  position: absolute;
+  top: 0px;
+}
+.gridCellValue .cross {
+  color: #b30000;
+}
+.error {
+  color: #8a8080;
+}
+.turnInfo {
+  color: #330a00;
+  text-align: center;
+}
+.resultInfo {
+  color: #b32400;
+  text-align: center;
+}
