@@ -110,11 +110,8 @@
   position: absolute;
   top: 0px;
 }
-.gridCellValue .cross {
+.gridCellValue .cross, .error {
   color: #b30000;
-}
-.error {
-  color: #8a8080;
 }
 .turnInfo {
   color: #330a00;
@@ -123,4 +120,12 @@
 .resultInfo {
   color: #b32400;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .parentGridContainer .parentGridCell {
+    display: none;
+  }
+  .turnInfo {
+    max-width: 300px;
+  }
 }
